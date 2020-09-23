@@ -3,24 +3,24 @@
 <%= form_with(model: @game, local: true) do |f|%>
 
     <% if @game.errors.any? %>
-        <% @game.errors.full_message.each do |msg|%>
+        <% @game.errors.full_messages.each do |msg|%>
             <p><%= msg %></p>
         <%end%>
     <%end%>
 
     <div>
-        <%= f.label :name, 'name' %>
+        <%= f.label :name, 'Nombre' %>
         <%= f.text_field :name %>
     </div>
 
     <div>
-        <%= f.label :year, 'año' %>
+        <%= f.label :year, 'Año' %>
         <%= f.number_field :year %>
     </div>
     
     <div>
         <%= f.label :category_id, 'categoria' %>
-        <%= f.select :category_id, @categories.map{|category|[category.name, category.id]}, prompt: 'seleccione...' %>
+        <%= f.select :category_id, @categories.map{|category| [category.name, category.id]}, prompt: 'seleccione...' %>
     </div>
 
     <div>

@@ -4,15 +4,15 @@ class CategoriesController < ApplicationController
     end
 
     def show
-        @category = Catergory.find(params[:id])
+        @category = Category.find(params[:id])
     end
     def new
-        @category = Caterory.new
+        @category = Category.new
     end
     def create
         @category = Category.new(category_params)
         if @category.save
-            redirect_to root_path, notice: 'categoria añadida'
+            redirect_to categories_path, notice: 'categoria añadida'
         else
             render :new
         end
