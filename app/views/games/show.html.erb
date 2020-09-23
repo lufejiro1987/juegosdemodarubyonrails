@@ -1,2 +1,9 @@
-<h1>Games#show</h1>
-<p>Find me in app/views/games/show.html.erb</p>
+<h1>Ver juego</h1>
+
+<h4>Nombre</h4>
+<h5><%= @game.name %></h5>
+
+<h4>Año</h4>
+<h5><%= @game.year %></h5>
+
+<%= link_to 'Atras', games_path %>

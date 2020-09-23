@@ -1,0 +1,19 @@
+<h1>Categorias</h1>
+
+<table>
+    <thead>
+        <th>Nombre</th>
+    </thead>
+
+    <tbody>
+        <% @categories.each do |cat| %>
+            <tr>
+                <td>
+                    <%= cat.name %>
+                </td>
+                <%= link_to 'ver', category_path(cat.id)%>
+                <%= link_to 'Borrar', cat, method: 'delete', data: {confirm: 'seguro?'}%>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

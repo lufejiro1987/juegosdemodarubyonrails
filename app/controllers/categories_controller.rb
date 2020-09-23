@@ -2,6 +2,10 @@ class CategoriesController < ApplicationController
     def index
         @categories = Category.all
     end
+
+    def show
+        @category = Catergory.find(params[:id])
+    end
     def new
         @category = Caterory.new
     end
