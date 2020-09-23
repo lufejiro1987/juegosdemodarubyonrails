@@ -1,5 +1,7 @@
 <h1>Juegos</h1>
 
+<%= link_to 'nuevo juego', new_game_path %>
+
 <table>
     <thead>
         <th>Nombre</th>
@@ -14,6 +16,9 @@
                 </td>
                 <td>
                     <%= game.year %>
+                </td>
+                <td>
+                    <%= game.category.name %>
                 </td>
                 <td>
                     <%= link_to 'ver', game_path(game.id)%>

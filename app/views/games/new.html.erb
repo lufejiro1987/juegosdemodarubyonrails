@@ -12,11 +12,17 @@
         <%= f.label :name, 'name' %>
         <%= f.text_field :name %>
     </div>
+
     <div>
         <%= f.label :year, 'año' %>
         <%= f.number_field :year %>
     </div>
     
+    <div>
+        <%= f.label :category_id, 'categoria' %>
+        <%= f.select :category_id, @categories.map{|category|[category.name, category.id]}, prompt: 'seleccione...' %>
+    </div>
+
     <div>
         <%= f.submit 'guardar'%>
     </div>

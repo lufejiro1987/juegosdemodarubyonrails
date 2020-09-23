@@ -28,5 +28,13 @@ class GamesController < ApplicationController
 
   def destroy
     @game = Game.find(params[:id])
+    @game.destroy
+    redirect_to games_path, notice: 'juego eliminado'
   end
+
+  private
+  def game_params
+    params.require(:game).permit(:name, :year, :category_id)
+  end
+
 end
