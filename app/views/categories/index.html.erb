@@ -11,8 +11,12 @@
                 <td>
                     <%= cat.name %>
                 </td>
-                <%= link_to 'ver', category_path(cat.id)%>
-                <%= link_to 'Borrar', cat, method: 'delete', data: {confirm: 'seguro?'}%>
+                <td>
+                    <%= link_to 'ver', category_path(cat.id)%>
+                </td>
+                <td>
+                    <%= link_to 'Borrar', cat, method: 'delete', data: {confirm: 'seguro?'}%>
+                </td>
             </tr>
         <% end %>
     </tbody>
