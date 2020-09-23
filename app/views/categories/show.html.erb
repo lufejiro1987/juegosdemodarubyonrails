@@ -4,4 +4,12 @@
 
 <h5><%= @category.name %></h5>
 
+<h3>Juegos</h3>
+
+<ul>
+    <% @category.games.each do |game| %>
+        <li><%= game.name %></li>
+    <% end %>
+</ul>
+
 <%= link_to 'Atras', categories_path %>

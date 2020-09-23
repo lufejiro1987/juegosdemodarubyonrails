@@ -8,51 +8,51 @@
 
 Category.destroy_all
 Game.destroy_all
-Category.create(
-    [
-        {
-            name: 'familiar'
-        },
-        {
-            name: 'accion'
-        },
-        {
-            name: 'aventura'
-        },
-        {
-            name: 'rol'
-        },
-        {
-            name: 'terror'
-        },
-        {
-            name: 'estrategia'
-        }
+# Category.create(
+#     [
+#         {
+#             name: 'familiar'
+#         },
+#         {
+#             name: 'accion'
+#         },
+#         {
+#             name: 'aventura'
+#         },
+#         {
+#             name: 'rol'
+#         },
+#         {
+#             name: 'terror'
+#         },
+#         {
+#             name: 'estrategia'
+#         }
 
-    ]
-)
+#     ]
+# )
 
-Game.create(
-    [
-        {
-            name: 'doom',
-            year: 2020
-        },
-        {
-            name: 'civilization VI',
-            year: 2019
-        },
-        {
-            name: 'kingdom hearts',
-            year: 2017
-        },
-        {
-            name: 'COD warzone',
-            year: 2019
-        },
-        {
-            name: 'Dark Souls 3',
-            year: 2019
-        }
-    ]
-)
+# Game.create(
+#     [
+#         {
+#             name: 'doom',
+#             year: 2020
+#         },
+#         {
+#             name: 'civilization VI',
+#             year: 2019
+#         },
+#         {
+#             name: 'kingdom hearts',
+#             year: 2017
+#         },
+#         {
+#             name: 'COD warzone',
+#             year: 2019
+#         },
+#         {
+#             name: 'Dark Souls 3',
+#             year: 2019
+#         }
+#     ]
+# )
